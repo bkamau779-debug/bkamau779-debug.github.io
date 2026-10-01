@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Savanna Table | Restaurant Demo</title>
+<meta name="description" content="Restaurant website demo by BK Web Studio.">
+<style>
+:root{--bg:#0b0d0c;--card:#151a17;--cream:#f5efe3;--muted:#b9b8ad;--gold:#d6a84f;--green:#8bb89b;--line:#2a302c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:var(--cream);line-height:1.6}a{text-decoration:none;color:inherit}.wrap{width:min(1080px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:10;background:#0b0d0ceb;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{height:68px;display:flex;justify-content:space-between;align-items:center}.logo{font-size:1.2rem;font-weight:900}.logo span{color:var(--gold)}.links{display:flex;gap:22px;color:var(--muted);font-weight:700}.links a:hover{color:#fff}
+.hero{min-height:650px;display:grid;place-items:center;text-align:center;padding:90px 0;background:radial-gradient(circle at 50% 35%,#6c542c55,transparent 28%),radial-gradient(circle at 20% 80%,#294b3655,transparent 30%),linear-gradient(135deg,#11130f,#080a09)}.eyebrow{color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-weight:900;font-size:.75rem}.hero h1{font-size:clamp(3.5rem,8vw,7rem);line-height:.9;letter-spacing:-.07em;margin:18px 0}.hero p{max-width:650px;margin:auto;color:var(--muted);font-size:1.1rem}.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:13px 19px;border:1px solid #555448;border-radius:10px;font-weight:900;display:inline-block;transition:.2s}.btn:hover{transform:translateY(-3px)}.primary{background:var(--gold);color:#15120b;border-color:var(--gold)}
+.section{padding:80px 0}.kicker{color:var(--gold);text-transform:uppercase;letter-spacing:2px;font-size:.72rem;font-weight:900}.section h2{font-size:clamp(2.1rem,5vw,3.5rem);line-height:1;margin:8px 0 15px;letter-spacing:-.04em}.muted{color:var(--muted)}
+.menu{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:30px}.item{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;justify-content:space-between;gap:20px;transition:.2s}.item:hover{transform:translateY(-4px);border-color:#675632}.item h3{margin:0 0 5px}.price{color:var(--gold);font-weight:900;white-space:nowrap}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:28px}.feature{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:23px}.icon{font-size:2rem}
+.cta{background:linear-gradient(135deg,#1c2a22,#17150e);border:1px solid #51472f;border-radius:24px;padding:45px;text-align:center}.back{margin-top:25px;text-align:center}.back a{color:#d9b96d;font-weight:800}
+footer{padding:30px 0;border-top:1px solid var(--line);color:#85877e}
+@media(max-width:700px){.links{display:none}.menu,.features{grid-template-columns:1fr}.hero{min-height:570px}.item{flex-direction:column}.price{white-space:normal}}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav"><a class="logo" href="#">SAVANNA<span>•</span> TABLE</a><div class="links"><a href="#menu">Menu</a><a href="#experience">Experience</a><a href="#visit">Visit</a></div></div></nav>
+
+<header class="hero">
+<div class="wrap">
+<div class="eyebrow">Restaurant • Café • Events</div>
+<h1>Good food.<br><span style="color:var(--gold)">Good moments.</span></h1>
+<p>A premium restaurant website concept designed to make it easy for customers to discover your menu, find you and get in touch.</p>
+<div class="buttons"><a class="btn primary" href="#menu">Explore Menu</a><a class="btn" href="https://wa.me/254751017278?text=Hi%20Savanna%20Table%2C%20I%27d%20like%20to%20make%20a%20reservation.">Reserve a Table</a></div>
+</div>
+</header>
+
+<section class="section" id="menu"><div class="wrap"><span class="kicker">Our menu</span><h2>Made to be remembered.</h2><p class="muted">Example menu content — a real restaurant can replace these with its own dishes, prices and photos.</p>
+<div class="menu">
+<div class="item"><div><h3>Grilled Chicken</h3><span class="muted">Herbs, vegetables & house sauce</span></div><div class="price">KSh 850</div></div>
+<div class="item"><div><h3>Beef Steak</h3><span class="muted">Grilled beef, seasonal sides</span></div><div class="price">KSh 1,250</div></div>
+<div class="item"><div><h3>Tilapia Special</h3><span class="muted">Fresh fish with greens & ugali</span></div><div class="price">KSh 950</div></div>
+<div class="item"><div><h3>Garden Pasta</h3><span class="muted">Creamy pasta with fresh vegetables</span></div><div class="price">KSh 700</div></div>
+<div class="item"><div><h3>Chapati Wrap</h3><span class="muted">Chicken, salad & signature sauce</span></div><div class="price">KSh 550</div></div>
+<div class="item"><div><h3>Fresh Juice</h3><span class="muted">Passion, mango or tropical blend</span></div><div class="price">KSh 250</div></div>
+</div></div></section>
+
+<section class="section" id="experience"><div class="wrap"><span class="kicker">The experience</span><h2>Everything customers need.</h2><div class="features">
+<div class="feature"><div class="icon">🍽️</div><h3>Digital Menu</h3><p class="muted">Show dishes, descriptions and prices clearly on any phone.</p></div>
+<div class="feature"><div class="icon">📲</div><h3>WhatsApp Reservations</h3><p class="muted">Let customers send reservation enquiries directly through WhatsApp.</p></div>
+<div class="feature"><div class="icon">📍</div><h3>Easy to Find</h3><p class="muted">Add your address, opening hours and Google Maps location.</p></div>
+<div class="feature"><div class="icon">📸</div><h3>Food Gallery</h3><p class="muted">Show your dishes, restaurant space and events.</p></div>
+<div class="feature"><div class="icon">🎉</div><h3>Events</h3><p class="muted">Promote birthdays, private dining and special events.</p></div>
+<div class="feature"><div class="icon">📱</div><h3>Mobile First</h3><p class="muted">Built around how most customers discover local restaurants.</p></div>
+</div></div></section>
+
+<section class="section" id="visit"><div class="wrap"><div class="cta"><span class="kicker">Visit us</span><h2>Make your next meal special.</h2><p class="muted">Example location: Nairobi, Kenya<br>Monday–Sunday • 10:00 AM–10:00 PM</p><div class="buttons"><a class="btn primary" href="https://wa.me/254751017278?text=Hi%20Savanna%20Table%2C%20I%27d%20like%20to%20make%20a%20reservation.">WhatsApp Reservation</a><a class="btn" href="tel:0751017278">Call Restaurant</a></div></div><div class="back"><a href="index.html">← Want a website like this? Contact BK Web Studio</a></div></div></section>
+
+<footer><div class="wrap">Restaurant Demo • Designed by BK Web Studio • Demo content only</div></footer>
+</body></html>
