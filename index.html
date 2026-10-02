@@ -1,1 +1,279 @@
-The requested file reference is not currently visible. Use files.search or files.list to rediscover the file, then retry with a returned ref_id or file_id.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BK Web Studio | Websites for Kenyan Businesses</title>
+<meta name="description" content="Brian Kamau, web developer in Kenya. Mobile-friendly websites and web tools for shops, restaurants, farms and education. Open to web development roles.">
+<meta property="og:title" content="BK Web Studio | Websites for Kenyan Businesses">
+<meta property="og:description" content="Brian Kamau, web developer in Kenya. See my live projects.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bkamau779-debug.github.io/">
+<!-- EDIT: add <meta property="og:image" content="https://.../preview.png"> (1200x630) so WhatsApp shows a preview picture -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230f3d2e'/%3E%3Ctext x='50' y='66' font-size='46' font-family='Arial' font-weight='800' text-anchor='middle' fill='%23ffc933'%3EBK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14211b;--forest:#0f3d2e;--leaf:#1f7a4f;--sun:#ffc933;--paper:#fbfaf6;--mist:#eef3ee;--line:#d6dfd8;--muted:#4a5a51;--wa:#25d366}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:'Instrument Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:'Bricolage Grotesque','Arial Black',system-ui,sans-serif;line-height:1.1;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+section{padding:72px 0}
+h2{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:800;margin-bottom:12px;max-width:18ch}
+.lead{color:var(--muted);max-width:56ch;margin-bottom:34px}
+.btn{display:inline-block;padding:13px 22px;border-radius:10px;font-weight:600;text-decoration:none;border:2px solid transparent;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:var(--wa);color:#06280f}
+.btn-sun{background:var(--sun);color:var(--ink)}
+.btn-line{border-color:currentColor}
+header{position:sticky;top:0;z-index:10;background:var(--forest);color:#fff}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;text-decoration:none;font-size:1.15rem}
+.logo b{color:var(--sun)}
+nav a{text-decoration:none;margin-left:20px;font-size:.95rem;opacity:.9}
+nav a:hover{opacity:1;text-decoration:underline}
+.hero{background:var(--forest);color:#fff;padding:56px 0 72px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(2.4rem,6.5vw,4.3rem);font-weight:800;margin-bottom:20px}
+.hero p{color:#cfe0d6;max-width:46ch;margin-bottom:28px;font-size:1.08rem}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero .btn-line{color:#fff}
+.phone{background:#0b2a1f;border:3px solid #2c5a47;border-radius:30px;padding:16px 14px 20px;max-width:310px;margin-left:auto;width:100%}
+.phone-top{font-size:.8rem;color:#9fc1b0;text-align:center;margin-bottom:12px}
+.msg{padding:10px 13px;border-radius:14px;font-size:.92rem;line-height:1.4;max-width:86%;margin-bottom:10px;opacity:0;animation:pop .4s forwards}
+.msg.in{background:#fff;color:var(--ink);border-bottom-left-radius:4px}
+.msg.out{background:#d9fdd3;color:var(--ink);margin-left:auto;border-bottom-right-radius:4px}
+.msg:nth-of-type(2){animation-delay:.9s}.msg:nth-of-type(3){animation-delay:1.8s}.msg:nth-of-type(4){animation-delay:2.7s}
+@keyframes pop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.demo{display:grid;grid-template-columns:1fr 1.4fr;border-radius:16px;overflow:hidden;margin-bottom:18px;text-decoration:none;border:1px solid var(--line);background:#fff}
+.demo .swatch{padding:30px 26px;display:flex;flex-direction:column;justify-content:flex-end;min-height:170px}
+.demo .swatch strong{font-family:'Bricolage Grotesque',sans-serif;font-size:1.6rem;line-height:1.1}
+.demo .swatch span{font-size:.9rem;opacity:.85}
+.demo .info{padding:26px}
+.demo h3{font-size:1.3rem;margin-bottom:6px}
+.demo p{color:var(--muted);margin-bottom:12px}
+.tag{display:inline-block;background:var(--mist);border-radius:99px;padding:2px 11px;font-size:.82rem;margin:0 6px 6px 0}
+.go{font-weight:600;color:var(--leaf)}
+.demo:hover .go{text-decoration:underline}
+.s1{background:#1f7a4f;color:#fff}.s2{background:#16161a;color:var(--sun)}.s3{background:#7a1f2b;color:#ffe9d6}
+.more{margin-top:22px;color:var(--muted)}
+.band{background:var(--mist)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.proj{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px}
+.proj h3{font-size:1.35rem;margin-bottom:8px}
+.proj dl{margin:14px 0}
+.proj dt{font-weight:600;font-size:.9rem;color:var(--leaf)}
+.proj dd{margin:0 0 8px;color:var(--muted)}
+.price{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:18px;align-items:stretch}
+.plan{border:1px solid var(--line);border-radius:16px;padding:26px;background:#fff}
+.plan.main{background:var(--forest);color:#fff;border-color:var(--forest)}
+.plan h3{font-size:1.25rem}
+.amt{font-family:'Bricolage Grotesque',sans-serif;font-size:2rem;font-weight:800;margin:6px 0 10px}
+.plan.main .amt{color:var(--sun)}
+.plan ul{padding-left:18px;color:var(--muted);font-size:.95rem}
+.plan.main ul{color:#cfe0d6}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s;list-style:none;padding:0}
+.steps li{counter-increment:s;border-top:4px solid var(--sun);padding-top:14px}
+.steps li::before{content:counter(s);font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:1.6rem;color:var(--leaf)}
+.steps h3{font-size:1.1rem;margin:4px 0}
+.steps p{color:var(--muted);font-size:.95rem}
+.about{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center}
+/* EDIT: replace .avatar with <img src="your-photo.jpg" alt="Brian Kamau" class="avatar"> */
+.avatar{width:130px;height:130px;border-radius:50%;background:var(--forest);color:var(--sun);display:grid;place-items:center;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:2.6rem;object-fit:cover}
+details{border-bottom:1px solid var(--line);padding:16px 0}
+summary{cursor:pointer;font-weight:600;font-size:1.05rem}
+details p{color:var(--muted);margin-top:8px;max-width:62ch}
+.contact{background:var(--forest);color:#fff}
+.contact h2{max-width:20ch}
+.contact .lead{color:#cfe0d6}
+.contact .btn-line{color:#fff}
+footer{background:#0b2a1f;color:#9fc1b0;padding:22px 0;font-size:.9rem}
+.fab{position:fixed;right:16px;bottom:16px;z-index:20;background:var(--wa);color:#06280f;font-weight:600;text-decoration:none;padding:12px 18px;border-radius:99px;box-shadow:0 4px 14px rgba(0,0,0,.25);display:none}
+@media(max-width:820px){
+.hero .wrap,.two,.price,.about{grid-template-columns:1fr}
+.steps{grid-template-columns:1fr 1fr}
+.demo{grid-template-columns:1fr}
+.demo .swatch{min-height:110px}
+.phone{margin:0}
+nav a:not(.keep){display:none}
+.fab{display:block}
+section{padding:54px 0}
+}
+@media(prefers-reduced-motion:reduce){.msg{animation:none;opacity:1}.btn{transition:none}html{scroll-behavior:auto}}
+
+/* ===== Eye-catching layer ===== */
+header{background:rgba(11,42,31,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:3px solid var(--sun)}
+.hero{position:relative;padding:100px 0 130px;background:radial-gradient(circle at 85% 15%,rgba(255,201,51,.30),transparent 45%),radial-gradient(circle at 8% 95%,rgba(31,122,79,.75),transparent 50%),linear-gradient(135deg,#0b2a1f,#0f3d2e 55%,#14573f);clip-path:polygon(0 0,100% 0,100% 91%,0 100%)}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.14) 1px,transparent 1px);background-size:26px 26px;-webkit-mask-image:linear-gradient(to bottom,#000,transparent 85%);mask-image:linear-gradient(to bottom,#000,transparent 85%)}
+.hero::after{content:"</>";position:absolute;right:3%;top:48%;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(7rem,22vw,17rem);color:var(--sun);opacity:.15;transform:translateY(-50%) rotate(-8deg);animation:drift 7s ease-in-out infinite;pointer-events:none;line-height:1}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-size:clamp(2.8rem,9vw,6rem);text-shadow:0 4px 30px rgba(0,0,0,.25)}
+.hero h1::after{content:"";display:block;height:9px;width:140px;background:var(--sun);border-radius:6px;margin-top:22px;animation:grow .9s .5s both}
+.hero h1,.hero p,.hero .cta{animation:rise .7s both}
+.hero p{animation-delay:.2s;font-size:1.15rem}
+.hero .cta{animation-delay:.35s}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes grow{from{width:0}to{width:140px}}
+@keyframes drift{0%,100%{transform:translateY(-50%) rotate(-8deg)}50%{transform:translateY(-56%) rotate(-4deg)}}
+.btn{box-shadow:0 2px 0 rgba(0,0,0,.15)}
+.btn-sun:hover{box-shadow:0 10px 28px rgba(255,201,51,.5)}
+.btn-wa:hover{box-shadow:0 10px 28px rgba(37,211,102,.45)}
+.btn-line:hover{background:rgba(255,255,255,.12)}
+h2::after{content:"";display:block;width:64px;height:7px;background:var(--sun);border-radius:6px;margin-top:12px}
+.demo,.proj,.plan{transition:transform .25s,box-shadow .25s}
+.demo:hover,.proj:hover,.plan:hover{transform:translateY(-6px);box-shadow:0 20px 44px rgba(15,61,46,.18)}
+.demo .swatch{position:relative;overflow:hidden}
+.demo .swatch::before{content:"";position:absolute;right:-50px;top:-50px;width:170px;height:170px;border-radius:50%;background:rgba(255,255,255,.14);transition:transform .4s}
+.demo:hover .swatch::before{transform:scale(1.7)}
+.demo .swatch strong{font-size:1.9rem;position:relative}
+.go{display:inline-block;margin-top:4px}
+.proj{border-left:7px solid var(--leaf)}
+.plan.main{background:linear-gradient(145deg,#0b2a1f,#14573f);box-shadow:0 18px 44px rgba(15,61,46,.35)}
+.band{background:linear-gradient(180deg,#eef3ee,#dfeee3)}
+.steps li::before{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:var(--sun);color:var(--ink);font-size:1.35rem;margin-bottom:8px}
+.steps li{border-top:0}
+.avatar{box-shadow:0 0 0 6px var(--sun),0 0 0 14px rgba(255,201,51,.3)}
+summary{list-style:none;position:relative;padding-right:34px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:4px;top:-4px;font-size:1.8rem;color:var(--leaf);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+.contact{background:radial-gradient(circle at 90% 0%,rgba(255,201,51,.28),transparent 50%),radial-gradient(circle at 0% 100%,rgba(31,122,79,.7),transparent 55%),#0f3d2e}
+@media(max-width:820px){.hero{padding:70px 0 100px}.hero::after{opacity:.1;right:-4%}}
+@media(prefers-reduced-motion:reduce){.hero h1,.hero p,.hero .cta,.hero h1::after,.hero::after{animation:none}.demo,.proj,.plan{transition:none}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a class="logo" href="#top">BK <b>Web Studio</b></a>
+<nav><a href="#work">Work</a><a href="#pricing">Pricing</a><a href="#about">About</a><a class="keep" href="#contact">Contact</a></nav>
+</div>
+</header>
+
+<main id="top">
+<div class="hero">
+<div class="wrap" style="grid-template-columns:1fr">
+<div>
+<h1 style="max-width:16ch">Brian Kamau, web developer.</h1>
+<p>I'm a student developer in Kenya. I build mobile-friendly websites and web tools, from shop, barber and restaurant sites to a study platform and a farm records app. Open to web development roles.</p>
+<div class="cta">
+<a class="btn btn-sun" href="#work">See my work</a>
+<a class="btn btn-line" href="mailto:bkamau779@gmail.com?subject=Job%20Opportunity">Email me</a>
+</div>
+</div>
+</div>
+</div>
+
+<section id="work">
+<div class="wrap">
+<h2>Try the demos on your phone.</h2>
+<p class="lead">These are concept sites. Yours would carry your name, photos, prices and location.</p>
+
+<a class="demo" href="https://bkamau779-debug.github.io/shop-demo.html">
+<div class="swatch s1"><strong>Urban Basket</strong><span>Everyday essentials, made easy.</span></div>
+<div class="info"><h3>Small shop</h3><p>Product list, order buttons and business info, built for phone screens.</p><span class="tag">Products</span><span class="tag">WhatsApp ordering</span><br><span class="go">Open the shop demo</span></div>
+</a>
+<a class="demo" href="https://bkamau779-debug.github.io/barber-demo.html">
+<div class="swatch s2"><strong>Fade District</strong><span>Sharp cuts. Fresh confidence.</span></div>
+<div class="info"><h3>Barber shop</h3><p>Services, prices, opening hours, team and a booking button.</p><span class="tag">Services</span><span class="tag">Pricing</span><span class="tag">Booking</span><br><span class="go">Open the barber demo</span></div>
+</a>
+<a class="demo" href="https://bkamau779-debug.github.io/restaurant-demo.html">
+<div class="swatch s3"><strong>Savanna Table</strong><span>Good food. Good moments.</span></div>
+<div class="info"><h3>Restaurant</h3><p>Menu, reservations and directions, ready for a photo gallery.</p><span class="tag">Menu</span><span class="tag">Reservations</span><span class="tag">Location</span><br><span class="go">Open the restaurant demo</span></div>
+</a>
+<p class="more">Also available for salons, real estate, photography, farms, gyms, bakeries and caterers.</p>
+</div>
+</section>
+
+<section class="band">
+<div class="wrap">
+<h2>Projects I have built.</h2>
+<p class="lead">Working products, not mockups.</p>
+<div class="two">
+<div class="proj">
+<h3>Smart AI</h3>
+<p>A study platform for students with notes, topics and quizzes.</p>
+<dl><dt>Problem</dt><dd>Students need revision material in one organised place.</dd><dt>What I built</dt><dd>Topic pages, notes and quiz practice.</dd></dl>
+<!-- EDIT: add the live link here, e.g. <a class="go" href="...">Open Smart AI</a> -->
+<span class="tag">Education</span>
+</div>
+<div class="proj">
+<h3>PoultryPro</h3>
+<p>A poultry management site for tracking egg production and farm records.</p>
+<dl><dt>Problem</dt><dd>Farm records kept on paper are easy to lose and hard to compare.</dd><dt>What I built</dt><dd>A web tool for recording and reviewing production.</dd></dl>
+<a class="go" href="https://poultrymanagementt.netlify.app">Open PoultryPro</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="pricing">
+<div class="wrap">
+<h2>Pricing is agreed with you.</h2>
+<p class="lead">Every project is different, so we'll negotiate the price on a call or by text, before any work starts.</p>
+<div class="cta">
+<a class="btn btn-wa" href="https://wa.me/254751017278?text=Hi%20Brian%2C%20I%27d%20like%20to%20discuss%20pricing.">Text me on WhatsApp</a>
+<a class="btn btn-sun" href="tel:+254751017278">Call +254 751 017 278</a>
+</div>
+</div>
+</section>
+
+<section class="band">
+<div class="wrap">
+<h2>From idea to live website.</h2>
+<p class="lead">Four steps, and you see the site before it goes live.</p>
+<ol class="steps">
+<li><h3>Tell me</h3><p>Share your business, services, photos and the style you like.</p></li>
+<li><h3>I build</h3><p>I design the site around what your customers look for.</p></li>
+<li><h3>You review</h3><p>Test it on your phone and tell me what to change.</p></li>
+<li><h3>Go live</h3><p>After final checks, your site is ready to share.</p></li>
+</ol>
+</div>
+</section>
+
+<section id="about">
+<div class="wrap about">
+<div class="avatar" aria-hidden="true">BK</div>
+<div>
+<h2>Hi, I'm Brian.</h2>
+<p class="lead" style="margin-bottom:0">I'm a student web developer in Kenya. I build websites for local businesses because most of them still rely on word of mouth and scattered social posts. I answer every message myself, and I'll tell you honestly what your business needs and what it doesn't.</p>
+</div>
+</div>
+</section>
+
+<section class="band">
+<div class="wrap">
+<h2>Questions clients ask.</h2>
+<div style="margin-top:18px">
+<details><summary>How much does a website cost?</summary><p>The price depends on what you need. We negotiate it on a call or by text, and agree it before work starts.</p></details>
+<details><summary>How long does it take?</summary><p>It depends on the size of the site. You get a time estimate on our call, before anything starts.</p></details>
+<details><summary>Do I need a domain and hosting?</summary><p>For a professional address like yourbusiness.co.ke, yes. I'll explain the options and costs on the call so you know exactly what you're paying for.</p></details>
+<details><summary>Can customers contact me through WhatsApp?</summary><p>Yes. WhatsApp buttons go in the key places on your site, with a message already typed for the customer.</p></details>
+<details><summary>Can you improve my existing website?</summary><p>Yes. I can redesign pages, make them work better on phones, and add new sections or features.</p></details>
+<details><summary>What happens after launch?</summary><p>You can ask for updates and changes later. We agree what's included before the project starts.</p></details>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="wrap">
+<h2>Ready to put your business online?</h2>
+<p class="lead">Tell me what your business does and what you want the site to achieve. We'll talk it through and agree the price together.</p>
+<div class="cta">
+<a class="btn btn-wa" href="https://wa.me/254751017278?text=Hi%20Brian%2C%20I%27d%20like%20to%20discuss%20a%20website%20project.">WhatsApp me</a>
+<a class="btn btn-sun" href="tel:+254751017278">Call +254 751 017 278</a>
+<a class="btn btn-line" href="mailto:bkamau779@gmail.com?subject=Website%20Project%20Enquiry">bkamau779@gmail.com</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap">BK Web Studio &middot; Brian Kamau &middot; Kenya</div></footer>
+<a class="fab" href="https://wa.me/254751017278?text=Hi%20Brian%2C%20I%27m%20interested%20in%20a%20website.">WhatsApp</a>
+</body>
+</html>
