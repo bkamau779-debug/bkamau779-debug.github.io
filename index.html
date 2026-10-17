@@ -15,6 +15,29 @@
 <meta property="og:description" content="Brian, web developer in Kenya. See my live projects.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bkamau779-debug.github.io/">
+<meta property="og:locale" content="en_KE">
+<meta name="author" content="Brian">
+<meta name="color-scheme" content="light">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "BK Web Studio",
+  "url": "https://bkamau779-debug.github.io/",
+  "description": "Mobile-friendly websites and simple web tools for businesses in Kenya.",
+  "areaServed": "Kenya",
+  "founder": {
+    "@type": "Person",
+    "name": "Brian"
+  },
+  "email": "bkamau779@gmail.com",
+  "telephone": "+254751017278",
+  "sameAs": [
+    "https://github.com/bkamau779-debug"
+  ],
+  "knowsAbout": ["Website design", "Responsive web development", "Basic SEO", "Web tools"]
+}
+</script>
 <!-- EDIT: add <meta property="og:image" content="https://.../preview.png"> (1200x630) so WhatsApp shows a preview picture -->
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230f3d2e'/%3E%3Ctext x='50' y='66' font-size='46' font-family='Arial' font-weight='800' text-anchor='middle' fill='%23ffc933'%3EBK%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -119,6 +142,14 @@ header{background:rgba(11,42,31,.92);backdrop-filter:blur(8px);-webkit-backdrop-
 .hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.14) 1px,transparent 1px);background-size:26px 26px;-webkit-mask-image:linear-gradient(to bottom,#000,transparent 85%);mask-image:linear-gradient(to bottom,#000,transparent 85%)}
 .hero::after{content:"</>";position:absolute;right:3%;top:48%;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(7rem,22vw,17rem);color:var(--sun);opacity:.15;transform:translateY(-50%) rotate(-8deg);animation:drift 7s ease-in-out infinite;pointer-events:none;line-height:1}
 .hero .wrap{position:relative;z-index:1}
+.hero-kicker{display:inline-flex;align-items:center;gap:9px;margin-bottom:18px;padding:7px 12px;border:1px solid rgba(255,255,255,.28);border-radius:99px;color:#fff;font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,255,255,.06)}
+.hero-kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--sun);box-shadow:0 0 0 4px rgba(255,201,51,.16)}
+.trust-strip{padding:22px 0;background:#fff;border-bottom:1px solid var(--line)}
+.trust-strip .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.trust-item{display:flex;align-items:center;gap:11px;font-weight:600;font-size:.96rem}
+.trust-icon{display:grid;place-items:center;flex:0 0 38px;height:38px;border-radius:11px;background:var(--mist);color:var(--forest);font-weight:800}
+.trust-item small{display:block;color:var(--muted);font-size:.82rem;font-weight:400}
+@media(max-width:650px){.trust-strip .wrap{grid-template-columns:1fr;gap:14px}.trust-item{align-items:flex-start}}
 .hero h1{font-size:clamp(2.8rem,9vw,6rem);text-shadow:0 4px 30px rgba(0,0,0,.25)}
 .hero h1::after{content:"";display:block;height:9px;width:140px;background:var(--sun);border-radius:6px;margin-top:22px;animation:grow .9s .5s both}
 .hero h1,.hero p,.hero .cta{animation:rise .7s both}
@@ -177,14 +208,23 @@ details[open] summary::after{transform:rotate(45deg)}
 <div class="hero">
 <div class="wrap" style="grid-template-columns:1fr">
 <div>
+<div class="hero-kicker">Web design &amp; development · Kenya</div>
 <h1 style="max-width:16ch">Brian</h1>
-<p>I'm a student developer in Kenya. I build mobile-friendly websites and web tools, from shop, barber and restaurant sites to a study platform and a farm records app. Open to web development roles.</p>
+<p>I build clear, mobile-friendly websites for Kenyan businesses, plus practical web tools for learning and record-keeping. Explore my demos, then tell me what you need.</p>
 <div class="cta">
 <a class="btn btn-sun" href="#work">See my work</a>
 <a class="btn btn-line" href="mailto:bkamau779@gmail.com?subject=Job%20Opportunity">Email me</a>
 </div>
 </div>
 </div>
+</div>
+
+<div class="trust-strip" aria-label="How I work">
+  <div class="wrap">
+    <div class="trust-item"><span class="trust-icon" aria-hidden="true">✓</span><span>Mobile-first design<small>Built to work on phones</small></span></div>
+    <div class="trust-item"><span class="trust-icon" aria-hidden="true">↔</span><span>Clear scope and price<small>Agreed before work begins</small></span></div>
+    <div class="trust-item"><span class="trust-icon" aria-hidden="true">✉</span><span>Direct communication<small>Talk through your project with Brian</small></span></div>
+  </div>
 </div>
 
 <section id="work">
@@ -319,7 +359,7 @@ details[open] summary::after{transform:rotate(45deg)}
 <div class="full"><label for="project-message">Tell me a little about the project *</label><textarea id="project-message" name="message" rows="4" required maxlength="1500" placeholder="What does your business do, and what would you like the website to do?"></textarea></div>
 </div>
 <button class="btn btn-sun" type="submit">Prepare email enquiry</button>
-<p class="form-note">This form opens your email app with your message prepared. It does not save or send your details to this website.</p>
+<p class="form-note">Privacy note: this form opens your email app with your message prepared. This website does not store your details. If your email app is not set up, use the WhatsApp button below instead.</p>
 <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
 </form>
 <div class="cta">
